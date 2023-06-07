@@ -26,11 +26,11 @@ int main(void)
 	
 	To blink an LED at 2Hz i.e. 0.5sec = 500msec (1000msec in 1sec)
 	
-	Time period = 1/31250 = 0.000032sec = 32microsec
+	Time period = 1/31250 = 0.000032sec = 0.032 milliseconds
 	
-	To elapse 32 microseconds, it takes 1 count
-	So, to elapse 1 microseconds, it takes 1/32count
-	So, to elapse 500 microseconds, it takes {(1/32)*500} = 15625 count
+	To elapse 0.032 milliseconds, it takes 1 count
+	So, to elapse 1 milliseconds, it takes 1/32count
+	So, to elapse 500 milliseconds, it takes {(1/0.032)*500} = 15625 count
 	
 	Timer 1 is a 16 bit counter. So, 0, 1, -> 65535 and then overflows.
 	
